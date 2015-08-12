@@ -1,7 +1,7 @@
 # MEAN-seed
 A minimalistic MEAN app skeleton
 
-## Install dependencies by
+## Install dependencies
 `cd dev`
 
 `npm install`
