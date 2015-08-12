@@ -3,6 +3,7 @@ A minimalistic MEAN app skeleton
 
 ## Install dependencies by
 `cd dev`
+
 `npm install`
 
 
