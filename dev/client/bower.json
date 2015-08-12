@@ -1,0 +1,34 @@
+{
+  "name": "mean-seed",
+  "version": "0.0.1",
+  "description": "Seed project for MEAN stack",
+  "main": "index.html",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "MeanHub",
+    "Mean-seed",
+    "MongoDB",
+    "ExpressJS",
+    "AngularJS",
+    "Node.js"
+  ],
+  "author": {
+    "name": "MeanHub",
+    "email": "info@meanhub.com",
+    "url": "http://meanhub.com/"
+  },
+  "homepage": "http://www.meanhub.com/",
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "1.3.x",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.5"
+  }
+}

@@ -1,0 +1,61 @@
+$page-width: 1090px;
+$page-height: 900px;
+$primary-theme-color: #FFF;
+$primary-text-color: #261919;
+$secondary-theme-color: #C2E6CC;
+
+body {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: $primary-text-color;
+}
+
+.company-logo {
+  margin: -110px 0 40px 0;
+}
+
+.logo-small {
+  height: 80px;
+  width: 80px;
+}
+
+.company-name {
+  font-size: 32px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.header-bar {
+  height: 200px;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.footer-bar {
+  background-color: $secondary-theme-color;
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  top: $page-height;
+  z-index: -1;
+}
+
+.main-container {
+  margin-top: -70px;
+  background-color: $primary-theme-color;
+  width: $page-width;
+  height: $page-height;
+  box-shadow: 0 0 40px gray;
+}
+
+section {
+  padding: 30px 30px 0 30px;
+}
+
+.page-content {
+  height: 650px;
+}
