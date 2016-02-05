@@ -39,7 +39,7 @@ var jsFiles = [
 ];
 
 var scssFiles = [
-  'client/static/style/**/*.scss'
+    'client/static/style/**/*.scss'
 ]
 
 var deployFolder = '../deploy';
@@ -107,7 +107,7 @@ gulp.task('process-html', function () {
 
 gulp.task('deploy-favicons', function () {
     gulp.src([
-        './client/static/favicons/**/*.*'])
+            './client/static/favicons/**/*.*'])
         .pipe(gulp.dest(deployFolder));
 });
 
@@ -124,27 +124,27 @@ gulp.task('browser-reload', function () {
 
 
 gulp.task('nodemon', function (cb) {
-  var called = false;
-  return nodemon({
-    script: 'main.js',
-    ignore: [
-      'gulpfile.js',
-      'node_modules/',
-      'client/',
-      'deploy/'
-    ]
-  })
-  .on('start', function () {
-    if (!called) {
-      called = true;
-      cb();
-    }
-  })
-  .on('restart', function () {
-    setTimeout(function () {
-      reload({ stream: false });
-    }, 5000);
-  });
+    var called = false;
+    return nodemon({
+        script: 'main.js',
+        ignore: [
+            'gulpfile.js',
+            'node_modules/',
+            'client/',
+            'deploy/'
+        ]
+    })
+        .on('start', function () {
+            if (!called) {
+                called = true;
+                cb();
+            }
+        })
+        .on('restart', function () {
+            setTimeout(function () {
+                reload({ stream: false });
+            }, 5000);
+        });
 });
 
 
@@ -174,8 +174,7 @@ gulp.task('watch', function () {
     gulp.watch(jsFiles, ['process-js']);
     gulp.watch('./static/styles/*.scss', ['process-scss']);
     gulp.watch('./index.html', ['process-html']);
-    gulp.watch('./controls/**/*', ['deploy']);
-    gulp.watch('./static/images/*', ['deploy']);
+    gulp.watch('./static/images/*', ['deploy-images']);
 });
 
 
@@ -185,6 +184,7 @@ gulp.task('default', function () {
         'process-js',
         'process-scss',
         'process-html',
+        'deploy-favicons',
         'deploy-images',
         'run',
         'watch'

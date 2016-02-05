@@ -6,6 +6,10 @@ A minimalistic MEAN app skeleton
 
 `npm install`
 
+`cd client`
+
+`bower install`
+
 
 ## Run the app
 `npm start & gulp --prod`
